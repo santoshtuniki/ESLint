@@ -1,7 +1,8 @@
 function checkPositive(number) {
 	if (number > 0) {
-		return true
+		return true;
 	}
+	return false;
 }
 
-console.log(checkPositive(3))
+console.log(checkPositive(3));
