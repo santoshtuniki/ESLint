@@ -5,4 +5,4 @@ function checkPositive(number) {
 	return false;
 }
 
-console.log(checkPositive(3));
+console.log(checkPositive('3'));
