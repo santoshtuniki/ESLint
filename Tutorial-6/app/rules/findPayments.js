@@ -1,7 +1,9 @@
 // https://astexplorer.net/ --> To understand CallExpression
 
 module.exports = {
-	// meta: {}
+	meta: {
+		fixable: 'code'
+	},
 	create(context) {
 		return {
 			CallExpression(node) {
@@ -9,6 +11,9 @@ module.exports = {
 					context.report({
 						node,
 						message: 'getPayments is deprecated. use getLatestPayments instead',
+						fix(fixer) {
+							return fixer.replaceText(node.callee, 'getLatestPayments')
+						}
 					});
 				}
 			}
