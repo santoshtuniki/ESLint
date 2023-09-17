@@ -5,8 +5,8 @@
   "main": "app/main.js",
   "scripts": {
     "start": "node app/main.js",
-    "lint": "eslint app",
-    "lint-fix": "eslint app --fix"
+    "lint": "eslint app --rulesdir app/rules",
+    "lint-fix": "eslint app --fix --rulesdir app/rules"
   },
   "keywords": [],
   "author": "",

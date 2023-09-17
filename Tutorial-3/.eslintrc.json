@@ -9,6 +9,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "findPayments": "error",
         "consistent-return": "error",
         "no-restricted-imports": [
             "error",
