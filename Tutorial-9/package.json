@@ -1,0 +1,16 @@
+{
+  "name": "tutorial-9",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/main.js",
+  "scripts": {
+    "lint": "eslint app",
+    "lint-fix": "eslint app --fix"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.49.0"
+  }
+}
