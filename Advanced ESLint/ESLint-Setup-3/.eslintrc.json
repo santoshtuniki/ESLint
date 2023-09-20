@@ -1,0 +1,40 @@
+{
+    "extends": [
+        "airbnb-base",
+        "plugin:tutorial-2/myConfig"
+    ],
+    "plugins": [
+        "promise",
+        "tutorial-2"
+    ],
+    "rules": {
+        "promise/catch-or-return": "error",
+        "consistent-return": "error",
+        "no-unused-vars": "off",
+        "no-console": "off",
+        "no-restricted-imports": ["error", "underscore"],
+        "eqeqeq": "error",
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"]
+    }
+}
+/*
+    Run 'npm link <package-name>'
+        --  A command to create a symbolic link in your project's node_modules folder 
+            that points to the global symlink of your package.
+        --  Installs the custom eslint-plugin-<package>
+
+    Add in .eslintrc.json
+        --  {    "plugins": [ 'package' ]   }
+        --  searches for 'eslint-plugin-<package>' in node_modules and implements it
+    
+    Add in .eslintrc.json
+        --  {    "extends": [ 'plugin:<package>/<configName>' ]   }
+        --  plugin:<package>    
+                -->     searches for "config" inside 'eslint-plugin-<package>'
+        --  plugin:<package>/<configName> 
+                -->     There can be multiple configs inside the plugin
+                -->     searches for config with name 'configName' inside 'eslint-plugin-<package>'
+*/
