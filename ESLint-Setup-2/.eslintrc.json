@@ -1,0 +1,36 @@
+{
+    "extends": "airbnb-base",
+    "plugins": [
+        "promise",
+        "tutorial"
+    ],
+    "rules": {
+        "promise/catch-or-return": "error",
+        "tutorial/findPayments": "error",
+        "tutorial/findFixme": [
+            "error",
+            "fixme",
+            "todo"
+        ],
+        "tutorial/funcParam": "error",
+        "consistent-return": "error",
+        "no-unused-vars": "off",
+        "no-console": "off",
+        "no-restricted-imports": ["error", "underscore"],
+        "eqeqeq": "error",
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "quotes": ["error", "single"],
+        "semi": ["error", "always"]
+    }
+}
+/*
+    Run 'npm link <package-name>'
+        --  A command to create a symbolic link in your project's node_modules folder 
+            that points to the global symlink of your package.
+        --  Installs the custom eslint-plugin-<package>
+
+    Add in .eslintrc.json
+        --  {    "plugins": [ 'package' ]   }
+        --  searches for 'eslint-plugin-<package>' in node_modules and implements it
+*/
