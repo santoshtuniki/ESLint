@@ -1,6 +1,6 @@
 {
     "env": {
-        "browser": true,
+        "node": true,
         "es2021": true
     },
     "extends": "eslint:recommended",
@@ -8,6 +8,7 @@
         "ecmaVersion": "latest"
     },
     "rules": {
+        "no-cosole": "off",
         "indent": [
             "error",
             4

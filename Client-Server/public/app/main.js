@@ -1,3 +1,3 @@
 document.getElementById('sai').addEventListener((event) => {
-    console.log(event)
+    console.log(event);
 });
