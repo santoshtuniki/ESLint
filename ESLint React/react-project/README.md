@@ -1,6 +1,6 @@
-# ESLint React
+### ESLint React
 
-In .eslintrc.json 'additionally' add the below:
+##### In .eslintrc.json 'additionally' add the below:
     {
         "env": {
             "jest": true
